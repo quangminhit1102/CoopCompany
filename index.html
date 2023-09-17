@@ -26,19 +26,14 @@
     <link rel="stylesheet" href="css/custom.css" />
     <!-- CSS -->
   </head>
-  <body
-    data-aos-easing="ease-out-back"
-    data-aos-duration="1500"
-    data-aos-delay="0"
-    cz-shortcut-listen="true"
-  >
+  <body>
     <div id="wrapwrap" class="homepage">
       <header id="top">
         <div
           class="container-fluid bg-white header2nd_portal_desktop"
-          style="padding: 20px 5%"
+          style="padding: 5px 5%"
         >
-          <div class="row" style="align-items: center">
+          <div class="row navbar" style="align-items: center">
             <div class="col-12 col-lg-2">
               <a href="/">
                 <span
@@ -111,47 +106,123 @@
             <div
               class="col-12 col-lg-2 d-flex justify-content-between align-items-center"
             >
-              <div
-                class="hmk_second_header_lang"
-                style="background: #0f489e; color: white"
-              >
-                <div class="js_language_selector dropdown">
-                  <button
-                    type="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    style="color: #e4e7ed"
-                    class="dropdown-toggle btn btn-link te_currency_symbol"
-                  >
-                    <span class="lang_btn_name">English (US)</span>
-                  </button>
-                  <div
-                    role="menu"
-                    class="dropdown-menu hmk_change_lang_dd"
-                    style="margin-top: 0px; top: unset"
-                  >
-                    <a
-                      class="dropdown-item js_change_lang"
-                      href="/en/"
-                      data-url_code="en"
-                    >
-                      <span>English (US)</span>
-                    </a>
-
-                    <a
-                      class="dropdown-item js_change_lang"
-                      href="/"
-                      data-url_code="vi"
-                    >
-                      <span> Tiếng Việt</span>
-                    </a>
-                  </div>
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-toggle js_language_selector"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Language
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">English</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Vietnamese</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <nav
+          data-name="Navbar1"
+          class="header2nd_portal_mobile navbar navbar-expand-md o_colored_level navbar-light o_cc te_header_navbar"
+          style=""
+        >
+          <div
+            id="top_menu_container"
+            class="container justify-content-lg-between miniapp_hidden_flex user_nav_info"
+          >
+            <a href="/en/" class="navbar-brand logo">
+              <span
+                ><img
+                  src="image/mini_logo.png"
+                  class="img img-fluid mobile-brand-logo"
+                  alt="Portal HMK"
+                  loading="lazy"
+              /></span>
+            </a>
+
+            <div class="ml-auto">
+              <button
+                type="button"
+                class="navbar-toggler ept_mobi_toggler collapsed ml-auto"
+                data-toggle="collapse"
+                data-target="#top_menu_collapse"
+              >
+                <span class="navbar-toggler-icon">
+                  <div class="inner_bar"></div>
+                </span>
+              </button>
+            </div>
+            <div
+              id="top_menu_collapse"
+              class="collapse navbar-collapse"
+              aria-expanded="false"
+            >
+              <ul id="top_menu" class="nav navbar-nav o_menu_loading">
+                <div class="d-grid hmk_second_header_submenu">
+                  <li class="nav-item">
+                    <a role="menuitem" href="/en/" class="nav-link active">
+                      <span>HOME</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a role="menuitem" href="/en/introduce" class="nav-link">
+                      <span>ABOUT</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      role="menuitem"
+                      href="/en/portal/category"
+                      class="nav-link"
+                    >
+                      <span>PRODUCTS AND SERVICES</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a role="menuitem" href="/en/blog" class="nav-link">
+                      <span>VIDEOS</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a role="menuitem" href="/en/video" class="nav-link">
+                      <span>VIDEO</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      role="menuitem"
+                      href="http://webshop.hamakyu.com/"
+                      class="nav-link"
+                    >
+                      <span>WEBSHOP</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a role="menuitem" href="/en/my/contact" class="nav-link">
+                      <span>CONTACT</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a role="menuitem" href="/en/map/website" class="nav-link">
+                      <span>SITEMAP</span>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </header>
       <main>
         <img src="image/banner hmk.jpg" alt="" />
@@ -620,16 +691,15 @@
           topHeader.classList.remove("fixed-top");
         }
       };
+      // Sticky Header
 
+      // Toggle Button For Mobile
       document
         .getElementsByClassName("navbar-toggler-icon")[0]
         .addEventListener("click", (e) => {
-          document
-            .getElementById("top")
-            .classList.toggle("o_top_menu_collapse_shown");
-
           document.getElementById("top_menu_collapse").classList.toggle("show");
         });
+      // Toggle Button For Mobile
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Script -->

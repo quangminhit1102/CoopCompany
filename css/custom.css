@@ -13,6 +13,12 @@ body {
   overflow: auto;
 }
 
+button.js_language_selector {
+  padding: 10px;
+  margin-left: 30px;
+  width: 120px;
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -30,4 +36,58 @@ body {
 
 .nav-item {
   list-style: none;
+}
+
+.header2nd_portal_mobile {
+  background-color: #fff;
+}
+
+.mobile-brand-logo {
+  object-fit: contain;
+  display: block;
+  width: auto;
+  height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .hmk_second_header_submenu .nav-item .nav-link::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #0389d2;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .hmk_second_header_submenu .nav-item .nav-link:hover::after {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header_mobile_view {
+    display: none;
+  }
+
+  .header2nd_portal_mobile {
+    display: none;
+  }
+
+  .hmk_mobile_ws {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header_mobile_view {
+    display: block;
+  }
+  .header2nd_portal_desktop {
+    display: none;
+  }
 }
