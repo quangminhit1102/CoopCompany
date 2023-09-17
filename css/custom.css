@@ -49,6 +49,25 @@ button.js_language_selector {
   height: 2.5rem;
 }
 
+.footer-section {
+  font-family: "Open sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-weight: 500;
+}
+
+.footer-section a {
+  text-decoration: none;
+}
+
+.footer-section ul {
+  padding: 0;
+}
+
+.footer-section li {
+  list-style: none;
+}
+
+/* Media Query */
 @media (min-width: 768px) {
   .hmk_second_header_submenu .nav-item .nav-link::after {
     background: none repeat scroll 0 0 transparent;
