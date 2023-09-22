@@ -28,7 +28,7 @@ button.js_language_selector {
 
 .nav-link {
   color: #606060;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   position: relative;
   font-weight: 600;
@@ -78,6 +78,131 @@ button.js_language_selector {
 }
 .carousel-item image {
   object-fit: cover;
+}
+
+/* Slider - Main */
+.main-slider {
+  position: relative;
+}
+.main-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  font-family: FontAwesome;
+}
+
+.main-slider .slick-prev:before {
+  font: FontAwesome;
+  content: "\f053";
+  color: #535353;
+}
+.main-slider .slick-next:before {
+  font: FontAwesome;
+  content: "\f054";
+  color: #535353;
+}
+
+.main-slider .slick-prev {
+  left: 10px;
+}
+
+.main-slider .slick-next {
+  right: 10px;
+}
+
+.main-slider .slick-prev,
+.main-slider .slick-next {
+  transform: scale(1);
+  opacity: 0;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 42%;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: transparent;
+}
+.main-slider .slick-prev:before,
+.main-slider .slick-next:before {
+  color: #6d6d6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: none;
+  font-family: FontAwesome;
+  font-size: 42px;
+  line-height: 22px;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+}
+.main-slider .slick-prev:after,
+.main-slider .slick-next:after {
+  display: none;
+}
+.main-slider .slick-next {
+  right: 1px;
+}
+.main-slider .slick-next:before {
+  content: "\f105";
+}
+.main-slider .slick-prev {
+  left: 1px;
+  z-index: 1;
+}
+.main-slider .slick-prev:before {
+  content: "\f104";
+}
+
+.main-slider:hover .slick-next,
+.main-slider:hover .slick-prev {
+  opacity: 1;
+  transform: scale(1.03);
+}
+.main-slider:hover .slick-prev {
+  left: 40px;
+}
+.main-slider:hover .slick-next {
+  right: 40px;
+}
+
+img.slider__image {
+  width: 100%;
+  height: 500px;
+  object-position: top;
+  object-fit: cover;
+}
+
+/* Product Categories */
+.product-categories {
+  width: 70%;
+  overflow: hidden;
+  border: #0084c7 1px solid;
+}
+
+.product-categories .product-info {
+  padding: 40px;
+}
+
+.product-categories .product-image {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.product-categories .product-image image {
+  object-fit: contain;
+  object-position: center;
 }
 
 /* Media Query */
