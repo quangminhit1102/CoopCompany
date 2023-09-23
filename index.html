@@ -540,15 +540,18 @@
     <script>
       // Sticky Header
       var topHeader = document.getElementById("top");
-      window.onscroll = function () {
-        if (window.pageYOffset >= topHeader.offsetTop) {
-          topHeader.classList.add("fixed-top");
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset >= 500 + topHeader.offsetTop) {
+          $("main").css("margin-top", `${topHeader.offsetTop}px`);
+          topHeader.classList.add("fixed_top");
         } else {
-          topHeader.classList.remove("fixed-top");
+          $("main").css("margin-top", `0px`);
+          topHeader.classList.remove("fixed_top");
         }
-      };
+      });
       // Sticky Header
 
+      // Document Ready
       $(document).ready(function () {
         $(".main-slider").slick({
           slidesToScroll: 1,

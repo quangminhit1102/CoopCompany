@@ -1,4 +1,9 @@
 /* START */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana,
     sans-serif;
@@ -20,10 +25,23 @@ button.js_language_selector {
   background-color: #0084c7;
 }
 
-.fixed-top {
+#top.fixed_top {
   position: fixed;
   top: 0;
   width: 100%;
+  animation: slideDown 0.7s ease-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .nav-link {
@@ -184,6 +202,11 @@ img.slider__image {
 }
 
 /* Product Categories */
+.online-catalogue {
+  display: flex;
+  justify-content: center;
+}
+
 .product-categories {
   width: 70%;
   overflow: hidden;
