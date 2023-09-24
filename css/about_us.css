@@ -1,0 +1,54 @@
+:root
+{
+    --main-color-rgb: #11499e;
+}
+
+.company_profile
+{
+    background-image: url('https://hamakyu.vn/web/image/11588-e12d8ce9/background-2.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.company_portal_number
+{
+    background-color: var(--main-color-rgb);
+    padding: 2rem 20%;
+}
+
+.company_why_us
+{
+    position: relative;
+    min-height: 90vh;
+}
+
+.background_vid
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    filter: brightness(0.5);
+}
+
+.background_vid_iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.why_us_content
+{
+    position: relative;
+    padding: 2rem 20%;
+}
