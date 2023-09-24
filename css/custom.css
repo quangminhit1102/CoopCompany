@@ -201,6 +201,32 @@ img.slider__image {
   object-fit: cover;
 }
 
+/* Company Introduction */
+
+.company-introduction {
+  position: relative;
+  margin: 0 10%;
+}
+
+.company-introduction .company-introduction-item {
+  background: url(../image/com-intro-1.jpeg);
+  min-height: 500px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.company-introduction-item .intro-info {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: calc(50% - 200px);
+  margin-left: 80%;
+  background-color: rgb(15, 72, 158);
+  margin-right: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px;
+}
+
 /* Product Categories */
 .online-catalogue {
   display: flex;
