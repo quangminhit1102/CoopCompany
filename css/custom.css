@@ -203,19 +203,69 @@ img.slider__image {
 
 /* Company Introduction */
 
-.company-introduction {
+.introduction-section .intro-cover {
+  min-height: 500px;
+  background-position: top;
+  background-size: cover;
   position: relative;
+}
+.introduction-section .company-introduction-item {
   margin: 0 10%;
+  margin-top: 80px;
 }
 
-.company-introduction .company-introduction-item {
+.company-introduction-item .intro-info-right, .company-introduction-item .intro-info-left {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: calc(50% - 200px);
+  background-color: rgb(15, 72, 158);
+  margin-right: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px;
+  padding: 30px;
+  color: #fff;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.company-introduction-item .intro-info-left {
+  left: -200px;
+}
+
+.company-introduction-item .intro-info-right {
+  margin-left: 80%;
+}
+
+.company-introduction-item .intro-title {
+  font-weight: 700;
+}
+
+.company-introduction-item .intro-detail {
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* .company-introduction {
+  position: relative;
+}
+.intro-info .intro-title {
+  font-weight: 700;
+}
+
+.intro-info .intro-detail {
+  line-height: 35px;
+}
+
+.company-introduction .company-introduction-item-left {
   background: url(../image/com-intro-1.jpeg);
   min-height: 500px;
   background-position: center center;
   background-size: cover;
+  width: 100%;
 }
 
-.company-introduction-item .intro-info {
+.company-introduction-item-left .intro-info {
   width: 400px;
   height: 400px;
   position: absolute;
@@ -225,7 +275,33 @@ img.slider__image {
   margin-right: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 15px;
+  padding: 30px;
+  color: #fff;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.6);
 }
+
+.company-introduction .company-introduction-item-right {
+  background: url(../image/com-intro-1.jpeg);
+  min-height: 500px;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.company-introduction-item-right .intro-info {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: calc(50% - 200px);
+  margin-left: 80%;
+  background-color: rgb(15, 72, 158);
+  margin-right: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px;
+  padding: 30px;
+  color: #fff;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.6);
+} */
 
 /* Product Categories */
 .online-catalogue {
