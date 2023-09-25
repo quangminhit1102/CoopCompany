@@ -207,6 +207,7 @@ img.slider__image {
   min-height: 500px;
   background-position: top;
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 .introduction-section .company-introduction-item {
@@ -214,7 +215,8 @@ img.slider__image {
   margin-top: 80px;
 }
 
-.company-introduction-item .intro-info-right, .company-introduction-item .intro-info-left {
+.company-introduction-item .intro-info-right,
+.company-introduction-item .intro-info-left {
   position: absolute;
   width: 400px;
   height: 400px;
@@ -246,87 +248,22 @@ img.slider__image {
   font-size: 20px;
 }
 
-/* .company-introduction {
-  position: relative;
-}
-.intro-info .intro-title {
-  font-weight: 700;
-}
-
-.intro-info .intro-detail {
-  line-height: 35px;
-}
-
-.company-introduction .company-introduction-item-left {
-  background: url(../image/com-intro-1.jpeg);
-  min-height: 500px;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-}
-
-.company-introduction-item-left .intro-info {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: calc(50% - 200px);
-  margin-left: 80%;
-  background-color: rgb(15, 72, 158);
-  margin-right: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 15px;
-  padding: 30px;
-  color: #fff;
-  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.6);
-}
-
-.company-introduction .company-introduction-item-right {
-  background: url(../image/com-intro-1.jpeg);
-  min-height: 500px;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-}
-
-.company-introduction-item-right .intro-info {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: calc(50% - 200px);
-  margin-left: 80%;
-  background-color: rgb(15, 72, 158);
-  margin-right: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 15px;
-  padding: 30px;
-  color: #fff;
-  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.6);
-} */
-
 /* Product Categories */
-.online-catalogue {
-  display: flex;
-  justify-content: center;
-}
 
 .product-categories {
-  width: 70%;
-  overflow: hidden;
+  margin-top: 80px;
+}
+
+.product-categories-card {
   border: #0084c7 1px solid;
+  max-width: 500px;
+  padding: 15px;
 }
 
-.product-categories .product-info {
-  padding: 40px;
-}
-
-.product-categories .product-image {
-  width: 50px;
-  height: 50px;
-  padding: 0;
-}
-
-.product-categories .product-image image {
-  object-fit: contain;
+.product-categories-card .product-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
   object-position: center;
 }
 
