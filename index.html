@@ -245,7 +245,11 @@
             />
           </div>
           <div class="slider__item">
-            <img class="slider__image" src="image/Scaled.jpg" alt="" />
+            <img
+              class="slider__image"
+              src="image/product-type-tools.jpg"
+              alt=""
+            />
           </div>
           <div class="slider__item">
             <img
@@ -321,57 +325,89 @@
         </div>
 
         <!-- Product Categories -->
-        <div class="online-catalogue mt-4 d-flex justify-content-center">
-          <div class="product-categories w-75">
+        <div class="online-catalogue d-flex justify-content-center">
+          <div class="product-categories d-flex justify-content-center">
             <div class="product-categories-card">
               <div class="product-image col">
-                <img src="image/Scaled.jpg" alt="" />
+                <img src="image/product-type-tools.jpg" alt="" />
               </div>
               <div class="product-info col">
-                <h3 class="product-type">CONVEYOR SYSTEM TRANSMIT</h3>
+                <h3 class="product-type">Electronic Assembly Tools</h3>
                 <p class="product-detail">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda fugit quibusdam cum consequuntur facere magni modi,
-                  praesentium a harum distinctio.
+                  Pactumax carries ready inventory of industrial standards
+                  precision & durable electronic assembly tools from selective
+                  established & reliable manufacturers.
                 </p>
               </div>
             </div>
             <div class="product-categories-card">
               <div class="product-image col">
-                <img src="image/Scaled.jpg" alt="" />
+                <img src="image/product-type-component-machine.jpg" alt="" />
               </div>
               <div class="product-info col">
-                <h3 class="product-type">CONVEYOR SYSTEM TRANSMIT</h3>
+                <h3 class="product-type">Machine Components</h3>
                 <p class="product-detail">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda fugit quibusdam cum consequuntur facere magni modi,
-                  praesentium a harum distinctio.
+                  Pactumax carries ready inventory of machine components
+                  includes precision tooling components, precision
+                  electro-mechanical parts, spring plungers, leveling devices,
+                  engine mounts and more.
                 </p>
               </div>
             </div>
             <div class="product-categories-card">
               <div class="product-image col">
-                <img src="image/Scaled.jpg" alt="" />
+                <img src="image/product-type-plastic.jpg" alt="" />
               </div>
               <div class="product-info col">
-                <h3 class="product-type">CONVEYOR SYSTEM TRANSMIT</h3>
+                <h3 class="product-type">Engineering Plastics</h3>
                 <p class="product-detail">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda fugit quibusdam cum consequuntur facere magni modi,
-                  praesentium a harum distinctio.
+                  Pactumax is a leading supplier and distributor of Engineering
+                  & Industrial plastics in Southeast Asia. We carry ready
+                  inventory of Engineering and Industrial plastics in the form
+                  of sheet & rod. Covering widest range of technical
+                  specifications & applications.
                 </p>
               </div>
             </div>
             <div class="product-categories-card">
               <div class="product-image col">
-                <img src="image/Scaled.jpg" alt="" />
+                <img src="image/product-type-tools.jpg" alt="" />
               </div>
               <div class="product-info col">
-                <h3 class="product-type">CONVEYOR SYSTEM TRANSMIT</h3>
+                <h3 class="product-type">Electronic Assembly Tools</h3>
                 <p class="product-detail">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda fugit quibusdam cum consequuntur facere magni modi,
-                  praesentium a harum distinctio.
+                  Pactumax carries ready inventory of industrial standards
+                  precision & durable electronic assembly tools from selective
+                  established & reliable manufacturers.
+                </p>
+              </div>
+            </div>
+            <div class="product-categories-card">
+              <div class="product-image col">
+                <img src="image/product-type-component-machine.jpg" alt="" />
+              </div>
+              <div class="product-info col">
+                <h3 class="product-type">Machine Components</h3>
+                <p class="product-detail">
+                  Pactumax carries ready inventory of machine components
+                  includes precision tooling components, precision
+                  electro-mechanical parts, spring plungers, leveling devices,
+                  engine mounts and more.
+                </p>
+              </div>
+            </div>
+            <div class="product-categories-card">
+              <div class="product-image col">
+                <img src="image/product-type-plastic.jpg" alt="" />
+              </div>
+              <div class="product-info col">
+                <h3 class="product-type">Engineering Plastics</h3>
+                <p class="product-detail">
+                  Pactumax is a leading supplier and distributor of Engineering
+                  & Industrial plastics in Southeast Asia. We carry ready
+                  inventory of Engineering and Industrial plastics in the form
+                  of sheet & rod. Covering widest range of technical
+                  specifications & applications.
                 </p>
               </div>
             </div>
@@ -641,9 +677,43 @@
         });
         $(".product-categories").slick({
           slidesToScroll: 1,
+          centerPadding: "0px",
+          centerMode: true,
+          slidesToShow: 3,
+          focusOnSelect: true,
           autoplay: true,
           autoplaySpeed: 4000,
+          prevArrow:
+            "<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+          nextArrow:
+            "<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
         });
+
         AOS.init();
       });
     </script>
