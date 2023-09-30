@@ -214,7 +214,7 @@ img.slider__image {
   background-repeat: no-repeat;
   position: relative;
   border-radius: 15px;
-  border: #0084c7 5px solid;
+  border: #0084c7 2px solid;
 }
 .introduction-section .company-introduction-item {
   margin: 0 10%;
@@ -231,7 +231,7 @@ img.slider__image {
   width: 400px;
   height: 400px;
   top: calc(50% - 200px);
-  background-color: rgba(0, 111, 167, 0.9);
+  background-color: rgba(0, 111, 167, 0.95);
   margin-right: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 15px;
@@ -263,12 +263,13 @@ img.slider__image {
 
 .product-categories {
   margin-top: 50px;
+  margin-bottom: 30px;
   width: 90%;
   position: relative;
 }
 
 .product-categories .slick-slide {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .product-categories .slick-list {
@@ -278,6 +279,8 @@ img.slider__image {
 .product-categories-card {
   border-radius: 2px solid red;
   padding: 20px;
+  border: #0084c7 2px solid;
+  border-radius: 15px;
 }
 
 .product-categories-card:hover {
@@ -286,6 +289,7 @@ img.slider__image {
 
 .product-categories-card .product-info .product-type {
   margin: 15px 0;
+  font-weight: bolder;
 }
 
 .product-categories .slick-slide,
@@ -304,7 +308,7 @@ img.slider__image {
 }
 
 .product-categories-card.slick-current.slick-active:hover {
-  background: red;
+  transform: scale(1.2);
 }
 
 .product-categories-card .product-image img {
@@ -346,6 +350,46 @@ img.slider__image {
   border: none;
   outline: none;
   transition: all ease-out 0.5s;
+}
+
+.section-products {
+  background: #f7f8fc;
+}
+
+.section-products .feature-product {
+  margin: 0 5%;
+}
+
+.feature-product .single-product {
+  background-color: #fff;
+}
+
+.feature-product .single-product .product-info {
+  padding: 10px;
+}
+
+.single-product .product-info .product-name {
+  margin: 10px 0;
+}
+
+.single-product .product-image {
+  height: 290px;
+  max-height: 290px;
+}
+
+.single-product:hover .product-image > img {
+  border: #6d6d6d 1px solid;
+}
+
+.single-product:hover {
+  box-shadow: 0 0 15px 1px #00000026;
+}
+
+.single-product .product-image img {
+  height: 290px;
+  max-height: 290px;
+  object-fit: contain;
+  object-position: center;
 }
 
 /* Media Query */
