@@ -1,487 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="image/x-icon" rel="shortcut icon" href="icon/xicon.ico" />
-    <title>Home - Company Name</title>
 
-    <!-- CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link type="image/x-icon" rel="shortcut icon" href="icon/xicon.ico" /> -->
+  <title>Home - Company Name</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css"
-    />
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+  </style>
 
-    <link rel="stylesheet" href="css/custom.css" />
-    <!-- CSS -->
-  </head>
-  <body>
-    <div id="wrapwrap" class="d-flex flex-column">
-      <header id="top">
-        <div
-          class="container-fluid bg-white header2nd_portal_desktop"
-          style="padding: 5px 5%"
-        >
-          <div class="row navbar" style="align-items: center">
-            <div class="col-12 col-lg-2">
-              <a href="/">
-                <span
-                  role="img"
-                  aria-label="Logo of Portal HMK"
-                  title="Portal HMK"
-                  ><img
-                    src="icon/companyLogo.png"
-                    class="img img-fluid"
-                    alt="Portal HMK"
-                    loading="lazy"
-                /></span>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
+
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/about_us.css" />
+  <!-- CSS -->
+</head>
+
+<body>
+  <div id="wrapwrap" class="d-flex flex-column">
+    <header id="top">
+      <div class="container-fluid bg-white header2nd_portal_desktop" style="padding: 5px 5%">
+        <div class="row navbar" style="align-items: center">
+          <div class="col-12 col-lg-2">
+            <a href="/">
+              <span role="img" aria-label="Logo of Portal HMK" title="Portal HMK"><img src="icon/companyLogo.png"
+                  class="img img-fluid" alt="Portal HMK" loading="lazy" /></span>
+            </a>
+          </div>
+          <div class="col-12 col-lg-8 p-0 d-flex justify-content-between hmk_second_header_submenu overflow-auto">
+            <li class="nav-item">
+              <a role="menuitem" href="/en/" class="nav-link active">
+                <span>HOME</span>
               </a>
-            </div>
-            <div
-              class="col-12 col-lg-8 p-0 d-flex justify-content-between hmk_second_header_submenu overflow-auto"
-            >
-              <li class="nav-item">
-                <a role="menuitem" href="/en/" class="nav-link active">
-                  <span>HOME</span>
-                </a>
-              </li>
+            </li>
 
-              <li class="nav-item">
-                <a role="menuitem" href="/en/introduce" class="nav-link">
-                  <span>ABOUT</span>
-                </a>
-              </li>
+            <li class="nav-item">
+              <a role="menuitem" href="/en/introduce" class="nav-link">
+                <span>ABOUT</span>
+              </a>
+            </li>
 
-              <li class="nav-item">
-                <a role="menuitem" href="/en/portal/category" class="nav-link">
-                  <span>PRODUCTS AND SERVICES</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a role="menuitem" href="/en/video" class="nav-link">
-                  <span>VIDEO</span>
-                </a>
-              </li>
+            <li class="nav-item">
+              <a role="menuitem" href="/en/portal/category" class="nav-link">
+                <span>PRODUCTS AND SERVICES</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a role="menuitem" href="/en/video" class="nav-link">
+                <span>VIDEO</span>
+              </a>
+            </li>
 
-              <li class="nav-item">
-                <a
-                  role="menuitem"
-                  href="http://webshop.hamakyu.com/"
-                  class="nav-link"
-                >
-                  <span>WEBSHOP</span>
-                </a>
-              </li>
+            <li class="nav-item">
+              <a role="menuitem" href="http://webshop.hamakyu.com/" class="nav-link">
+                <span>WEBSHOP</span>
+              </a>
+            </li>
 
-              <li class="nav-item">
-                <a role="menuitem" href="/en/my/contact" class="nav-link">
-                  <span>CONTACT</span>
-                </a>
-              </li>
+            <li class="nav-item">
+              <a role="menuitem" href="/en/my/contact" class="nav-link">
+                <span>CONTACT</span>
+              </a>
+            </li>
 
-              <li class="nav-item">
-                <a role="menuitem" href="/en/map/website" class="nav-link">
-                  <span>SITEMAP</span>
-                </a>
-              </li>
-            </div>
-            <div
-              class="col-12 col-lg-2 d-flex justify-content-between align-items-center"
-            >
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn btn-primary dropdown-toggle js_language_selector"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Language
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">English</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Vietnamese</a>
-                </div>
+            <li class="nav-item">
+              <a role="menuitem" href="/en/map/website" class="nav-link">
+                <span>SITEMAP</span>
+              </a>
+            </li>
+          </div>
+          <div class="col-12 col-lg-2 d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle js_language_selector"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">English</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Vietnamese</a>
               </div>
             </div>
           </div>
         </div>
-        <nav
-          data-name="Navbar1"
-          class="header2nd_portal_mobile navbar navbar-expand-md o_colored_level navbar-light o_cc te_header_navbar"
-          style=""
-        >
-          <div
-            id="top_menu_container"
-            class="container justify-content-lg-between miniapp_hidden_flex user_nav_info"
-          >
-            <a href="/en/" class="navbar-brand logo">
-              <span
-                ><img
-                  src="image/mini_logo.png"
-                  class="img img-fluid mobile-brand-logo"
-                  alt="Portal HMK"
-                  loading="lazy"
-              /></span>
-            </a>
+      </div>
+      <nav data-name="Navbar1"
+        class="header2nd_portal_mobile navbar navbar-expand-md o_colored_level navbar-light o_cc te_header_navbar"
+        style="">
+        <div id="top_menu_container" class="container justify-content-lg-between miniapp_hidden_flex user_nav_info">
+          <a href="/en/" class="navbar-brand logo">
+            <span><img src="image/mini_logo.png" class="img img-fluid mobile-brand-logo" alt="Portal HMK"
+                loading="lazy" /></span>
+          </a>
 
-            <div class="ml-auto">
-              <button
-                type="button"
-                class="navbar-toggler ept_mobi_toggler collapsed ml-auto"
-                data-bs-toggle="collapse"
-                data-bs-target="#top_menu_collapse"
-              >
-                <span class="navbar-toggler-icon">
-                  <div class="inner_bar"></div>
-                </span>
-              </button>
+          <div class="ml-auto">
+            <button type="button" class="navbar-toggler ept_mobi_toggler collapsed ml-auto" data-bs-toggle="collapse"
+              data-bs-target="#top_menu_collapse">
+              <span class="navbar-toggler-icon">
+                <div class="inner_bar"></div>
+              </span>
+            </button>
+          </div>
+          <div id="top_menu_collapse" class="collapse navbar-collapse" aria-expanded="false">
+            <ul id="top_menu" class="nav navbar-nav o_menu_loading">
+              <div class="d-grid hmk_second_header_submenu">
+                <li class="nav-item">
+                  <a role="menuitem" href="/en/" class="nav-link active">
+                    <span>HOME</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a role="menuitem" href="/en/introduce" class="nav-link">
+                    <span>ABOUT</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a role="menuitem" href="/en/portal/category" class="nav-link">
+                    <span>PRODUCTS AND SERVICES</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a role="menuitem" href="/en/blog" class="nav-link">
+                    <span>VIDEOS</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a role="menuitem" href="/en/video" class="nav-link">
+                    <span>VIDEO</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a role="menuitem" href="http://webshop.hamakyu.com/" class="nav-link">
+                    <span>WEBSHOP</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a role="menuitem" href="/en/my/contact" class="nav-link">
+                    <span>CONTACT</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a role="menuitem" href="/en/map/website" class="nav-link">
+                    <span>SITEMAP</span>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Start: Company profile -->
+      <section class="company_profile">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="https://hamakyu.vn/web/image/11589-41ffb6c6/20-years.png" alt=""
+                style="max-width: 100%;height: auto;">
             </div>
-            <div
-              id="top_menu_collapse"
-              class="collapse navbar-collapse"
-              aria-expanded="false"
-            >
-              <ul id="top_menu" class="nav navbar-nav o_menu_loading">
-                <div class="d-grid hmk_second_header_submenu">
-                  <li class="nav-item">
-                    <a role="menuitem" href="/en/" class="nav-link active">
-                      <span>HOME</span>
-                    </a>
-                  </li>
+            <div class="col-lg-6">
+              <h2>Who We Are</h2>
+              <p>
+                Southeast Asia’s leading Engineering Plastics, Machine Components and Electronic Assembly Tools
+                provider.
+                Founded in 1996, Pactumax worked closely with customers and built and developed 20+ years of expertise
+                and experience, particularly in Engineering Plastics application in all fields, covering from general
+                application, to demanding usage environment such as high temperature, fire retardant, chemical
+                resistance, stringent static control etc, to meet stringent medical safety requirements.
 
-                  <li class="nav-item">
-                    <a role="menuitem" href="/en/introduce" class="nav-link">
-                      <span>ABOUT</span>
-                    </a>
-                  </li>
+                Currently, Pactumax operates with a head office, sales and warehouse center in Singapore. 9 overseas
+                sales offices are strategically deployed in China, Thailand, Malaysia, Indonesia and Vietnam
+                respectively.
 
-                  <li class="nav-item">
-                    <a
-                      role="menuitem"
-                      href="/en/portal/category"
-                      class="nav-link"
-                    >
-                      <span>PRODUCTS AND SERVICES</span>
-                    </a>
-                  </li>
+                Pactumax carries an exhaustive list of Engineering Plastics, Machine Components and Electronic Assembly
+                Tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Company profile -->
 
-                  <li class="nav-item">
-                    <a role="menuitem" href="/en/blog" class="nav-link">
-                      <span>VIDEOS</span>
-                    </a>
-                  </li>
+      <!-- Start: Portal Number -->
+      <section class="company_portal_number">
+        <div class="container text-center">
+          <div class="row">
 
-                  <li class="nav-item">
-                    <a role="menuitem" href="/en/video" class="nav-link">
-                      <span>VIDEO</span>
-                    </a>
-                  </li>
+            <!-- Start: Portal Number block 1 -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="d-flex justify-content-center">
+                <img src="https://hamakyu.vn/theme_hamakyu/static/src/image/1.png" style="width:99px;height:99px"
+                  loading="lazy">
+              </div>
+              <div class="d-flex justify-content-center fw-bold" style="color:#69d7ae;height:76px;font-size:38px">
+                <div class="js_count mr-1 align-self-end">300</div>
+                <div class=""> + </div>
+              </div>
+              <div class="text-white fw-bold text-wrap" style="font-size:19px">
+                Completed projects
+              </div>
+            </div>
+            <!-- End: Portal Number block 1 -->
 
-                  <li class="nav-item">
-                    <a
-                      role="menuitem"
-                      href="http://webshop.hamakyu.com/"
-                      class="nav-link"
-                    >
-                      <span>WEBSHOP</span>
-                    </a>
-                  </li>
+            <!-- Start: Portal Number block 2 -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="d-flex justify-content-center">
+                <img src="https://hamakyu.vn/theme_hamakyu/static/src/image/1.png" style="width:99px;height:99px"
+                  loading="lazy">
+              </div>
+              <div class="d-flex justify-content-center fw-bold" style="color:#69d7ae;height:76px;font-size:38px">
+                <div class="js_count mr-1 align-self-end">300</div>
+                <div class=""> + </div>
+              </div>
+              <div class="text-white fw-bold text-wrap" style="font-size:19px">
+                Completed projects
+              </div>
+            </div>
+            <!-- End: Portal Number block 2 -->
 
-                  <li class="nav-item">
-                    <a role="menuitem" href="/en/my/contact" class="nav-link">
-                      <span>CONTACT</span>
-                    </a>
-                  </li>
+            <!-- Start: Portal Number block 3 -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="d-flex justify-content-center">
+                <img src="https://hamakyu.vn/theme_hamakyu/static/src/image/1.png" style="width:99px;height:99px"
+                  loading="lazy">
+              </div>
+              <div class="d-flex justify-content-center fw-bold" style="color:#69d7ae;height:76px;font-size:38px">
+                <div class="js_count mr-1 align-self-end">300</div>
+                <div class=""> + </div>
+              </div>
+              <div class="text-white fw-bold text-wrap" style="font-size:19px">
+                Completed projects
+              </div>
+            </div>
+            <!-- End: Portal Number block 3 -->
 
-                  <li class="nav-item">
-                    <a role="menuitem" href="/en/map/website" class="nav-link">
-                      <span>SITEMAP</span>
-                    </a>
-                  </li>
+            <!-- Start: Portal Number block 4 -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="d-flex justify-content-center">
+                <img src="https://hamakyu.vn/theme_hamakyu/static/src/image/1.png" style="width:99px;height:99px"
+                  loading="lazy">
+              </div>
+              <div class="d-flex justify-content-center fw-bold" style="color:#69d7ae;height:76px;font-size:38px">
+                <div class="js_count mr-1 align-self-end">300</div>
+                <div class=""> + </div>
+              </div>
+              <div class="text-white fw-bold text-wrap" style="font-size:19px">
+                Completed projects
+              </div>
+            </div>
+            <!-- End: Portal Number block 4 -->
+          </div>
+        </div>
+
+      </section>
+      <!-- End: Portal Number -->
+
+      <!-- Start: Why us -->
+      <section class="company_why_us">
+        <div class="background_vid">
+          <iframe class="background_vid_iframe" frameborder="0"
+            src="//www.youtube.com/embed/gPgMltxn-N4?autoplay=1&amp;mute=1&amp;rel=0&amp;loop=1&amp;playlist=gPgMltxn-N4&amp;controls=0&amp;fs=0&amp;modestbranding=1"></iframe>
+        </div>
+        <div class="container why_us_content">
+          <h1 class="fw-bold my-5">Why choose us</h1>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="why_us_block">
+                <img src="https://hamakyu.vn/theme_hamakyu/static/src/image/2%20(1).png" alt="">
+                <p>Good Services</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="why_us_block">
+                <img src="https://hamakyu.vn/theme_hamakyu/static/src/image/2%20(1).png" alt="">
+                <p>sasaasas</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="why_us_block">
+                <img src="https://hamakyu.vn/theme_hamakyu/static/src/image/2%20(1).png" alt="">
+                <p>sasaasas</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="why_us_block">
+                <img src="https://hamakyu.vn/theme_hamakyu/static/src/image/2%20(1).png" alt="">
+                <p>Good Services</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="why_us_block">
+                <img src="https://hamakyu.vn/theme_hamakyu/static/src/image/2%20(1).png" alt="">
+                <p>sasaasas</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="why_us_block">
+                <img src="https://hamakyu.vn/theme_hamakyu/static/src/image/2%20(1).png" alt="">
+                <p>sasaasas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Why us -->
+
+      <!-- Start: Company team -->
+      <section class="company_team">
+        <div class="container company_team_container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="avatar"></div>
+              <h3 class="fw-bold">name</h3>
+              <p>CEO</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="avatar"></div>
+              <h3 class="fw-bold">name</h3>
+              <p>CEO</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="avatar"></div>
+              <h3 class="fw-bold">name</h3>
+              <p>CEO</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End: Company team -->
+
+    </main>
+    <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc">
+      <div class="footer-section" style="
+            background-size: cover;
+            background-image: url(image/footer.jpg);
+          ">
+        <div class="container-fluid" style="padding: 40px 10% 0 10%">
+          <div class="row border-bottom">
+            <div class="col-12 col-md-4">
+              <div>
+                <img src="icon/logo-white.png" style="height: 50px" loading="lazy" />
+              </div>
+              <div class="d-grid mt-4">
+                <div>
+                  Tax Registration Number:
+                  <span> 0101080795 </span>
                 </div>
+                <div>Date of Issue: 08/11/2000</div>
+                <div>Place of Issue: Hanoi</div>
+              </div>
+              <div class="my-5">
+                <div class="mb-3">Follow Us</div>
+                <div class="d-flex gap-3">
+                  <a href="/facebook.com">
+                    <img src="icon/Facebook.png" alt="Facebook" style="width: 50px; height: 50px" loading="lazy" />
+                  </a>
+                  <a href="/instagram.com">
+                    <img src="icon/Instagram.png" alt="Instagram" style="width: 50px; height: 50px" loading="lazy" />
+                  </a>
+                  <a href="/twitter.com">
+                    <img src="icon/Twitter.png" alt="Twitter" style="width: 50px; height: 50px" loading="lazy" />
+                  </a>
+                  <a href="/youtubbe.com">
+                    <img src="icon/Youtube.png" alt="Youtube" style="width: 50px; height: 50px" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <ul class="pl-0 pl-lg-3">
+                <div style="font-size: 20px">
+                  <strong> Categories </strong>
+                </div>
+                <li class="my-3">
+                  <span class="ml-2">
+                    <a href="" class="text-white" data-original-title="" title="" aria-describedby="tooltip111355">About
+                      us</a>
+                  </span>
+                </li>
+                <li class="mb-3">
+                  <span class="ml-2">
+                    <a href="" class="text-white">Products and Services</a>
+                  </span>
+                </li>
+                <li class="mb-3">
+                  <span class="ml-2">
+                    <a href="" class="text-white">Videos</a>
+                  </span>
+                </li>
+                <li class="mb-3">
+                  <span class="ml-2">
+                    <a href="" class="text-white">News and Events</a>
+                  </span>
+                </li>
+                <li class="mb-3">
+                  <span class="ml-2">
+                    <a href="" class="text-white">Policy</a>
+                  </span>
+                </li>
+                <li class="mb-3">
+                  <span class="ml-2">
+                    <a href="" class="text-white">Contact</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-5">
+              <div style="font-size: 20px">
+                <strong> Contact Address </strong>
+              </div>
+              <ul class="pl-0 pl-lg-3">
+                <li class="d-flex align-items-center gap-3 my-3" style="height: 50px">
+                  <div style="
+                        padding: 3px 7px;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                      ">
+                    <i class="fa fa-map-marker text-center" style="width: 16px; height: 16px"></i>
+                  </div>
+                  <span>
+                    <a href="#" class="text-white">
+                      No. 33, Lot 2, Den Lu 1, Hoang Van Thu Ward, Hoang Mai
+                      District, Hanoi, Vietnam
+                    </a>
+                  </span>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3" style="height: 50px">
+                  <div style="
+                        padding: 3px 7px;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                      ">
+                    <i class="fa fa-phone text-center" style="width: 16px; height: 16px"></i>
+                  </div>
+                  <span>
+                    <a href="#" class="text-white"> +84 24 3862 6801 </a>
+                  </span>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3" style="height: 50px">
+                  <div style="
+                        padding: 3px 7px;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                      ">
+                    <i class="fa fa-fax text-center" style="width: 16px; height: 16px"></i>
+                  </div>
+                  <span>
+                    <a href="#" class="text-white">
+                      Toll free : 1800 64 67 90
+                    </a>
+                  </span>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3" style="height: 50px">
+                  <div style="
+                        padding: 3px 7px;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                      ">
+                    <i class="fa fa-envelope text-center" style="width: 16px; height: 16px"></i>
+                  </div>
+                  <span>
+                    <a href="#" class="text-white"> info@hamakyu.com </a>
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
-        </nav>
-      </header>
-      <main></main>
-      <footer
-        id="bottom"
-        data-anchor="true"
-        data-name="Footer"
-        class="o_footer o_colored_level o_cc"
-      >
-        <div
-          class="footer-section"
-          style="
-            background-size: cover;
-            background-image: url(image/footer.jpg);
-          "
-        >
-          <div class="container-fluid" style="padding: 40px 10% 0 10%">
-            <div class="row border-bottom">
-              <div class="col-12 col-md-4">
-                <div>
-                  <img
-                    src="icon/logo-white.png"
-                    style="height: 50px"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="d-grid mt-4">
-                  <div>
-                    Tax Registration Number:
-                    <span> 0101080795 </span>
-                  </div>
-                  <div>Date of Issue: 08/11/2000</div>
-                  <div>Place of Issue: Hanoi</div>
-                </div>
-                <div class="my-5">
-                  <div class="mb-3">Follow Us</div>
-                  <div class="d-flex gap-3">
-                    <a href="/facebook.com">
-                      <img
-                        src="icon/Facebook.png"
-                        alt="Facebook"
-                        style="width: 50px; height: 50px"
-                        loading="lazy"
-                      />
-                    </a>
-                    <a href="/instagram.com">
-                      <img
-                        src="icon/Instagram.png"
-                        alt="Instagram"
-                        style="width: 50px; height: 50px"
-                        loading="lazy"
-                      />
-                    </a>
-                    <a href="/twitter.com">
-                      <img
-                        src="icon/Twitter.png"
-                        alt="Twitter"
-                        style="width: 50px; height: 50px"
-                        loading="lazy"
-                      />
-                    </a>
-                    <a href="/youtubbe.com">
-                      <img
-                        src="icon/Youtube.png"
-                        alt="Youtube"
-                        style="width: 50px; height: 50px"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-3">
-                <ul class="pl-0 pl-lg-3">
-                  <div style="font-size: 20px">
-                    <strong> Categories </strong>
-                  </div>
-                  <li class="my-3">
-                    <span class="ml-2">
-                      <a
-                        href=""
-                        class="text-white"
-                        data-original-title=""
-                        title=""
-                        aria-describedby="tooltip111355"
-                        >About us</a
-                      >
-                    </span>
-                  </li>
-                  <li class="mb-3">
-                    <span class="ml-2">
-                      <a href="" class="text-white">Products and Services</a>
-                    </span>
-                  </li>
-                  <li class="mb-3">
-                    <span class="ml-2">
-                      <a href="" class="text-white">Videos</a>
-                    </span>
-                  </li>
-                  <li class="mb-3">
-                    <span class="ml-2">
-                      <a href="" class="text-white">News and Events</a>
-                    </span>
-                  </li>
-                  <li class="mb-3">
-                    <span class="ml-2">
-                      <a href="" class="text-white">Policy</a>
-                    </span>
-                  </li>
-                  <li class="mb-3">
-                    <span class="ml-2">
-                      <a href="" class="text-white">Contact</a>
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-5">
-                <div style="font-size: 20px">
-                  <strong> Contact Address </strong>
-                </div>
-                <ul class="pl-0 pl-lg-3">
-                  <li
-                    class="d-flex align-items-center gap-3 my-3"
-                    style="height: 50px"
-                  >
-                    <div
-                      style="
-                        padding: 3px 7px;
-                        border: 1px solid white;
-                        border-radius: 50%;
-                      "
-                    >
-                      <i
-                        class="fa fa-map-marker text-center"
-                        style="width: 16px; height: 16px"
-                      ></i>
-                    </div>
-                    <span>
-                      <a href="#" class="text-white">
-                        No. 33, Lot 2, Den Lu 1, Hoang Van Thu Ward, Hoang Mai
-                        District, Hanoi, Vietnam
-                      </a>
-                    </span>
-                  </li>
-                  <li
-                    class="d-flex align-items-center gap-3 mb-3"
-                    style="height: 50px"
-                  >
-                    <div
-                      style="
-                        padding: 3px 7px;
-                        border: 1px solid white;
-                        border-radius: 50%;
-                      "
-                    >
-                      <i
-                        class="fa fa-phone text-center"
-                        style="width: 16px; height: 16px"
-                      ></i>
-                    </div>
-                    <span>
-                      <a href="#" class="text-white"> +84 24 3862 6801 </a>
-                    </span>
-                  </li>
-                  <li
-                    class="d-flex align-items-center gap-3 mb-3"
-                    style="height: 50px"
-                  >
-                    <div
-                      style="
-                        padding: 3px 7px;
-                        border: 1px solid white;
-                        border-radius: 50%;
-                      "
-                    >
-                      <i
-                        class="fa fa-fax text-center"
-                        style="width: 16px; height: 16px"
-                      ></i>
-                    </div>
-                    <span>
-                      <a href="#" class="text-white">
-                        Toll free : 1800 64 67 90
-                      </a>
-                    </span>
-                  </li>
-                  <li
-                    class="d-flex align-items-center gap-3 mb-3"
-                    style="height: 50px"
-                  >
-                    <div
-                      style="
-                        padding: 3px 7px;
-                        border: 1px solid white;
-                        border-radius: 50%;
-                      "
-                    >
-                      <i
-                        class="fa fa-envelope text-center"
-                        style="width: 16px; height: 16px"
-                      ></i>
-                    </div>
-                    <span>
-                      <a href="#" class="text-white"> info@hamakyu.com </a>
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div
-            class="d-flex justify-content-between align-items-center"
-            style="padding: 10px 10%"
-          >
-            <div>@2023. All right reserved</div>
-            <div>
-              <img src="icon/ThongBaoBCT.png" loading="lazy" />
-            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center" style="padding: 10px 10%">
+          <div>@2023. All right reserved</div>
+          <div>
+            <img src="icon/ThongBaoBCT.png" loading="lazy" />
           </div>
         </div>
-      </footer>
-      <div
-        role="dialog"
-        id="product_configure_model_main"
-        class="o_not_editable"
-        contenteditable="false"
-      ></div>
+      </div>
+    </footer>
+    <div role="dialog" id="product_configure_model_main" class="o_not_editable" contenteditable="false"></div>
 
-      <div
-        role="dialog"
-        id="hotspot_configure_model_main"
-        class="o_not_editable"
-        contenteditable="false"
-      ></div>
-    </div>
-    <!-- Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
-    <script>
-      // Sticky Header
-      var topHeader = document.getElementById("top");
-      window.onscroll = function () {
-        if (window.pageYOffset >= topHeader.offsetTop) {
-          topHeader.classList.add("fixed-top");
-        } else {
-          topHeader.classList.remove("fixed-top");
-        }
-      };
-      // Sticky Header
+    <div role="dialog" id="hotspot_configure_model_main" class="o_not_editable" contenteditable="false"></div>
+  </div>
+  <!-- Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
+  <script>
+    // Sticky Header
+    var topHeader = document.getElementById("top");
+    window.onscroll = function () {
+      if (window.pageYOffset >= topHeader.offsetTop) {
+        topHeader.classList.add("fixed-top");
+      } else {
+        topHeader.classList.remove("fixed-top");
+      }
+    };
+    // Sticky Header
 
-      // Carousel
-      $("#carousel-main-slider").carousel({
-        interval: 3000,
-        cycle: true,
-      });
-    </script>
-    <!-- Script -->
-  </body>
+    // Carousel
+    $("#carousel-main-slider").carousel({
+      interval: 3000,
+      cycle: true,
+    });
+  </script>
+  <!-- Script -->
+</body>
+
 </html>
