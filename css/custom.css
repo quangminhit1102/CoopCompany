@@ -208,7 +208,6 @@ img.slider__image {
 }
 
 /* Company Introduction */
-
 .introduction-section {
   background-color: #f7f8fc;
   padding: 60px 0;
@@ -263,6 +262,25 @@ img.slider__image {
   line-height: 35px;
   font-weight: 400;
   font-size: 20px;
+}
+
+.company-introduction .company-introduction-item {
+  background: url(../image/com-intro-1.jpeg);
+  min-height: 500px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.company-introduction-item .intro-info {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: calc(50% - 200px);
+  margin-left: 80%;
+  background-color: rgb(15, 72, 158);
+  margin-right: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px;
 }
 
 /* Product Categories */
