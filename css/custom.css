@@ -248,7 +248,7 @@ img.slider__image {
 }
 
 .company-introduction-item .intro-info-left {
-  left: -200px;
+  margin-left: -20%;
 }
 
 .company-introduction-item .intro-info-right {
@@ -415,7 +415,7 @@ img.slider__image {
 .featured-brand-slider {
   width: 100%;
   margin: auto;
-  overflow: visible;
+  overflow: hidden;
 }
 .featured-brand-slider ul {
   display: flex;
@@ -425,19 +425,26 @@ img.slider__image {
 .featured-brand-slider li {
   padding: 0 10px;
   list-style: none;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-.featured-brand-slider li:hover
-{
+.featured-brand-slider li:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.featured-brand-slider ul {
+  padding: 15px 0;
+}
+
 .featured-brand-slider img {
   max-height: 100px;
   max-width: fit-content !important;
   height: auto !important;
   border: 1px #6d6d6d solid;
 }
+
+/* Section Contact */
+
 @keyframes cambio {
   from {
     margin-left: 0%;
@@ -482,14 +489,34 @@ img.slider__image {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .header_mobile_view {
-    display: block;
+    display: none;
   }
   .header2nd_portal_desktop {
     display: none;
   }
   .company-introduction-item .intro-cover {
     background: none !important;
+    border: none;
+  }
+  .company-introduction-item .intro-info-right,
+  .company-introduction-item .intro-info-left {
+    margin: 0;
+  }
+
+  .introduction-section .company-introduction-item {
+    margin: 0;
+    justify-content: start !important;
+  }
+
+  .section-contact form {
+    margin-bottom: 30px;
+  }
+  .section-products .single-product {
+    width: 100%;
+  }
+  .product-image img {
+    width: 100% !important;
   }
 }
