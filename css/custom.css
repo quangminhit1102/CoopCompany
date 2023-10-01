@@ -370,6 +370,8 @@ img.slider__image {
   background-color: #fff;
   overflow: hidden;
   width: 290px;
+  height: 400px;
+  max-height: 420px;
 }
 
 .feature-product .single-product .product-info {
