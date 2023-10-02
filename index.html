@@ -574,6 +574,82 @@
           </div>
         </section>
         <!-- End Products -->
+        <!-- Blog Section -->
+        <section class="blog-section mt-5 mb-5">
+          <div class="container">
+            <div class="row justify-content-start pt-3 pb-3">
+              <div class="col-md-8 col-lg-6">
+                <a href="" class="link-secondary view-all-product"
+                  >From the Blog
+                  <i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="blog-slider">
+                  <div class="blog-card">
+                    <div class="blog-img">
+                      <img src="image/blog-01.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="blog-info">
+                      <div class="blog-date">14 JAN, 2023</div>
+                      <h4 class="blog-title text-truncate">
+                        This is new Title of Blog
+                      </h4>
+                      <p class="blog-summary" style="max-height: 50px">
+                        Sometimes on purpose ected humour. dummy text.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="blog-img">
+                      <img src="image/blog-01.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="blog-info">
+                      <div class="blog-date">14 JAN, 2023</div>
+                      <h4 class="blog-title text-truncate">
+                        This is new Title of Blog
+                      </h4>
+                      <p class="blog-summary" style="max-height: 50px">
+                        Sometimes on purpose ected humour. dummy text.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="blog-img">
+                      <img src="image/blog-01.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="blog-info">
+                      <div class="blog-date">14 JAN, 2023</div>
+                      <h4 class="blog-title text-truncate">
+                        This is new Title of Blog
+                      </h4>
+                      <p class="blog-summary" style="max-height: 50px">
+                        Sometimes on purpose ected humour. dummy text.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="blog-img">
+                      <img src="image/blog-01.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="blog-info">
+                      <div class="blog-date">14 JAN, 2023</div>
+                      <h4 class="blog-title text-truncate">
+                        This is new Title of Blog
+                      </h4>
+                      <p class="blog-summary" style="max-height: 50px">
+                        Sometimes on purpose ected humour. dummy text.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Blog Section -->
 
         <!-- Feature Brand -->
         <section class="section-featured-brand fluid-container">
@@ -804,7 +880,6 @@
             </div>
           </div>
         </section>
-
         <!-- End Contact Us -->
       </main>
       <footer
@@ -1066,6 +1141,23 @@
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 4000,
+        });
+        $(".blog-slider").slick({
+          slidesToShow: 4,
+          prevArrow: false,
+          nextArrow: false,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          infinite: false,
+          arrows: true,
+          dots: false,
+          responsive: [
+            { breakpoint: 1367, settings: { slidesToShow: 3 } },
+            { breakpoint: 1024, settings: { slidesToShow: 2 } },
+            { breakpoint: 767, settings: { slidesToShow: 2 } },
+            { breakpoint: 480, settings: { slidesToShow: 1 } },
+          ],
         });
         $(".product-categories").slick({
           slidesToScroll: 1,

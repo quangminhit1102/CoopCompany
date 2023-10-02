@@ -447,6 +447,42 @@ img.slider__image {
 
 /* Section Contact */
 
+/* Section Blog */
+.blog-card {
+  cursor: pointer;
+}
+
+.blog-info .blog-img {
+  position: relative;
+}
+
+.blog-section .slick-slider .slick-list .slick-slide > div {
+  margin: 0 15px;
+}
+
+.blog-section .slick-slider .slick-list {
+  margin: 0 -15px;
+}
+
+.blog-section .blog-img img {
+  border-radius: 15px;
+}
+
+.blog-info .blog-date {
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #f7f8fc !important;
+  display: inline-block;
+  padding: 1px 8px;
+  position: absolute;
+  top: 15px;
+}
+
+.blog-info .blog-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 @keyframes cambio {
   from {
     margin-left: 0%;
