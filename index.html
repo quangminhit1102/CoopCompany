@@ -241,13 +241,13 @@
           <div class="slider__item">
             <img class="slider__image" src="image/banner hmk.jpg" alt="" />
           </div>
-          <div class="slider__item">
+          <!-- <div class="slider__item">
             <img
               class="slider__image"
               src="image/electric-tools-slider.jpg"
               alt=""
             />
-          </div>
+          </div> -->
           <div class="slider__item">
             <img
               class="slider__image"
@@ -1111,6 +1111,14 @@
         contenteditable="false"
       ></div>
     </div>
+    <button
+      type="button"
+      class="btn btn-primary btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -1124,13 +1132,25 @@
     <script>
       // Sticky Header
       var topHeader = document.getElementById("top");
+      //Get the button
+      var myButton = document.getElementById("btn-back-to-top");
       window.addEventListener("scroll", () => {
+        // scroll down and add fixed top
         if (window.pageYOffset >= 500 + topHeader.offsetTop) {
           $("main").css("margin-top", `${topHeader.offsetTop}px`);
           topHeader.classList.add("fixed_top");
         } else {
           $("main").css("margin-top", `0px`);
           topHeader.classList.remove("fixed_top");
+        }
+        // scroll Down and Show Button
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          myButton.style.display = "block";
+        } else {
+          myButton.style.display = "none";
         }
       });
       // Sticky Header
@@ -1193,7 +1213,14 @@
           ],
         });
 
+        // Init AOS
         AOS.init();
+
+        // When the user clicks on the button, scroll to the top of the document
+        myButton.addEventListener("click", () => {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        });
       });
     </script>
 
