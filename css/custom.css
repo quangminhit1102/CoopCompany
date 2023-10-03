@@ -16,6 +16,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 button.js_language_selector {
@@ -556,5 +557,11 @@ img.slider__image {
   }
   .product-image img {
     width: 100% !important;
+  }
+  .product-categories .slick-arrow {
+    display: none !important;
+  }
+  .product-categories .product-categories-card {
+    border: none;
   }
 }
