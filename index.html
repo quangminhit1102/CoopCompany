@@ -61,7 +61,7 @@
               </a>
             </div>
             <div
-              class="col-12 col-lg-8 p-0 d-flex justify-content-between hmk_second_header_submenu overflow-auto"
+              class="col-12 col-lg-8 px-5 d-flex justify-content-between hmk_second_header_submenu overflow-auto"
             >
               <li class="nav-item">
                 <a role="menuitem" href="index.html" class="nav-link active">
@@ -76,35 +76,49 @@
               </li>
 
               <li class="nav-item">
-                <a role="menuitem" href="/en/portal/category" class="nav-link">
-                  <span>PRODUCTS AND SERVICES</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a role="menuitem" href="/en/video" class="nav-link">
-                  <span>VIDEO</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
                 <a
                   role="menuitem"
-                  href="http://webshop.hamakyu.com/"
+                  href="#"
                   class="nav-link"
+                  data-toggle="dropdown"
                 >
-                  <span>WEBSHOP</span>
+                  <span>PRODUCTS AND SERVICES &raquo;</span>
+                  <ul class="dropdown-menu" style="z-index: 10000">
+                    <li><a tabindex="-1" href="#">HTML</a></li>
+                    <li><a tabindex="-1" href="#">CSS</a></li>
+                    <li class="dropdown-submenu">
+                      <a class="test" tabindex="-1" href="#"
+                        >New dropdown <span class="caret"></span
+                      ></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a tabindex="-1" href="#">2nd level dropdown</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#">2nd level dropdown</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                          <a class="test" href="#"
+                            >Another dropdown <span class="caret"></span
+                          ></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">3rd level dropdown</a></li>
+                            <li><a href="#">3rd level dropdown</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
                 </a>
               </li>
-
+              <li class="nav-item">
+                <a role="menuitem" href="/en/map/website" class="nav-link">
+                  <span>POSTS AND EVENTS</span>
+                </a>
+              </li>
               <li class="nav-item">
                 <a role="menuitem" href="/en/my/contact" class="nav-link">
                   <span>CONTACT</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a role="menuitem" href="/en/map/website" class="nav-link">
-                  <span>SITEMAP</span>
                 </a>
               </li>
             </div>
@@ -192,38 +206,14 @@
                       <span>PRODUCTS AND SERVICES</span>
                     </a>
                   </li>
-
                   <li class="nav-item">
-                    <a role="menuitem" href="/en/blog" class="nav-link">
-                      <span>VIDEOS</span>
+                    <a role="menuitem" href="/en/map/website" class="nav-link">
+                      <span>POSTS AND EVENTS</span>
                     </a>
                   </li>
-
-                  <li class="nav-item">
-                    <a role="menuitem" href="/en/video" class="nav-link">
-                      <span>VIDEO</span>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a
-                      role="menuitem"
-                      href="http://webshop.hamakyu.com/"
-                      class="nav-link"
-                    >
-                      <span>WEBSHOP</span>
-                    </a>
-                  </li>
-
                   <li class="nav-item">
                     <a role="menuitem" href="/en/my/contact" class="nav-link">
                       <span>CONTACT</span>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a role="menuitem" href="/en/map/website" class="nav-link">
-                      <span>SITEMAP</span>
                     </a>
                   </li>
                 </div>
@@ -594,11 +584,20 @@
                     </div>
                     <div class="blog-info">
                       <div class="blog-date">14 JAN, 2023</div>
-                      <h4 class="blog-title text-truncate">
+                      <h5 class="blog-title text-truncate">
                         This is new Title of Blog
-                      </h4>
-                      <p class="blog-summary w-100">
-                        Sometimes on purpose ected humour. dummy text.
+                      </h5>
+                      <p class="blog-summary truncate-overflow">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. A mollitia odio nobis quaerat ad rerum illum
+                        repellendus dicta, voluptate voluptatibus, assumenda
+                        laborum aliquid cum! Recusandae molestiae enim expedita
+                        iusto soluta quam ea laboriosam est totam quasi omnis
+                        odit similique placeat nobis quae dolor minima, sequi
+                        accusantium. Voluptas maiores reiciendis at.
+                      </p>
+                      <p class="main-blue-color">
+                        By <strong>Admin</strong> - <strong>0</strong> Comments
                       </p>
                     </div>
                   </div>
@@ -608,11 +607,20 @@
                     </div>
                     <div class="blog-info">
                       <div class="blog-date">14 JAN, 2023</div>
-                      <h4 class="blog-title text-truncate">
+                      <h5 class="blog-title text-truncate">
                         This is new Title of Blog
-                      </h4>
-                      <p class="blog-summary" style="max-height: 50px">
-                        Sometimes on purpose ected humour. dummy text.
+                      </h5>
+                      <p class="blog-summary truncate-overflow">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ad repellendus labore harum consectetur minima
+                        neque, consequatur eaque eius error deleniti? Minus aut
+                        dolor ipsa ex totam corrupti! Eos, maiores temporibus
+                        dicta quae earum consequuntur explicabo reiciendis
+                        soluta consectetur similique a incidunt sapiente dolor
+                        nisi facilis accusantium eligendi animi. Sed, tempore!
+                      </p>
+                      <p class="main-blue-color">
+                        By <strong>Admin</strong> - <strong>0</strong> Comments
                       </p>
                     </div>
                   </div>
@@ -622,11 +630,16 @@
                     </div>
                     <div class="blog-info">
                       <div class="blog-date">14 JAN, 2023</div>
-                      <h4 class="blog-title text-truncate">
+                      <h5 class="blog-title text-truncate">
                         This is new Title of Blog
-                      </h4>
-                      <p class="blog-summary" style="max-height: 50px">
-                        Sometimes on purpose ected humour. dummy text.
+                      </h5>
+                      <p class="blog-summary truncate-overflow">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Expedita minus laborum iusto et deleniti adipisci
+                        doloremque quibusdam amet, hic perspiciatis?
+                      </p>
+                      <p class="main-blue-color">
+                        By <strong>Admin</strong> - <strong>0</strong> Comments
                       </p>
                     </div>
                   </div>
@@ -636,11 +649,20 @@
                     </div>
                     <div class="blog-info">
                       <div class="blog-date">14 JAN, 2023</div>
-                      <h4 class="blog-title text-truncate">
+                      <h5 class="blog-title text-truncate">
                         This is new Title of Blog
-                      </h4>
-                      <p class="blog-summary" style="max-height: 50px">
-                        Sometimes on purpose ected humour. dummy text.
+                      </h5>
+                      <p class="blog-summary truncate-overflow">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis est voluptate necessitatibus perspiciatis error
+                        quasi eaque rerum laudantium inventore aperiam odit
+                        vitae, quo delectus recusandae praesentium, similique
+                        maiores rem enim tenetur repellat fugit! Quidem mollitia
+                        laborum id ex tempora, iste unde, natus vero facere
+                        necessitatibus fugiat est nostrum sequi quia.
+                      </p>
+                      <p class="main-blue-color">
+                        By <strong>Admin</strong> - <strong>0</strong> Comments
                       </p>
                     </div>
                   </div>
@@ -1076,7 +1098,7 @@
         <!-- End Feature Brand -->
 
         <!-- Contact Us -->
-        <section class="section-contact">
+        <section class="section-contact mt-5 mb-5">
           <div class="container">
             <div class="row">
               <div class="col-md-6">

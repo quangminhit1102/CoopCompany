@@ -455,6 +455,11 @@ img.slider__image {
 /* Section Blog */
 .blog-card {
   cursor: pointer;
+  transition: opacity ease-in-out 0.3s;
+}
+
+.blog-card:hover {
+  opacity: 0.7;
 }
 
 .blog-info .blog-img {
@@ -474,7 +479,7 @@ img.slider__image {
 }
 
 .blog-info .blog-date {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   background-color: #f7f8fc !important;
   display: inline-block;
@@ -587,6 +592,14 @@ img.slider__image {
 .brand__details a {
   text-decoration: none;
   color: #606060;
+}
+
+.truncate-overflow {
+  display: -webkit-box;
+  max-width: inherit;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
