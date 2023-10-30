@@ -26,8 +26,30 @@ button.js_language_selector {
   background-color: #0084c7;
 }
 
-.header2nd_portal_desktop .nav-item a {
+.header2nd_portal_desktop .nav-item > a {
   padding: 20px;
+}
+
+.dropdown-item {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.dropdown-item.has-children:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top:0;
+  bottom:0;
+  margin-top:auto;
+  margin-bottom:auto;
+  border-top: 8px solid transparent;
+  border-left: 12px solid #0084c7;
+  border-bottom: 8px solid transparent;
+  display: inline-block;
+  vertical-align: middle;
+  right: 10px;
 }
 
 #top.fixed_top {

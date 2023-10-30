@@ -77,8 +77,9 @@
               </a>
             </div>
             <div
-              class="col-12 col-lg-8 px-5 d-flex justify-content-between hmk_second_header_submenu overflow-auto"
+              class="col-12 col-lg-8 px-5 d-flex justify-content-between hmk_second_header_submenu"
             >
+              <ul></ul>
               <li class="nav-item">
                 <a role="menuitem" href="index.html" class="nav-link active">
                   <span>HOME</span>
@@ -91,41 +92,45 @@
                 </a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item dropdown">
                 <a
                   role="menuitem"
                   href="#"
                   class="nav-link"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                 >
-                  <span>PRODUCTS AND SERVICES &raquo;</span>
-                  <ul class="dropdown-menu" style="z-index: 10000">
-                    <li><a tabindex="-1" href="#">HTML</a></li>
-                    <li><a tabindex="-1" href="#">CSS</a></li>
-                    <li class="dropdown-submenu">
-                      <a class="test" tabindex="-1" href="#"
-                        >New dropdown <span class="caret"></span
-                      ></a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a tabindex="-1" href="#">2nd level dropdown</a>
-                        </li>
-                        <li>
-                          <a tabindex="-1" href="#">2nd level dropdown</a>
-                        </li>
-                        <li class="dropdown-submenu">
-                          <a class="test" href="#"
-                            >Another dropdown <span class="caret"></span
-                          ></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">3rd level dropdown</a></li>
-                            <li><a href="#">3rd level dropdown</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <span>PRODUCTS AND SERVICES</span>
                 </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item has-children" href="#">Engineering Plastic</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item has-children href="#"
+                      >Electronic Assembly Tool</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item has-children" href="#">Machine Component</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Product Catalogs</a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Another submenu 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another submenu 2</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another submenu 3</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another submenu 4</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a role="menuitem" href="/en/map/website" class="nav-link">
