@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--#region Meta Tag -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Pactumax International, Pactumax, with a retailer presence of more than 20 years, is one of the leading retailers and distributors of Engineering Plastics and Equipment Components in Southeast Asia."
+    />
+    <meta
+      name="keywords"
+      content="Pactumax, Retailer, Plastic, Engineering, Equipment, International, Southeast Asia, Machine Components, Electronic Assembly Tools, Singapore, VietNam"
+    />
+    <meta name="author" content="NoOne" />
     <link type="image/x-icon" rel="shortcut icon" href="icon/xicon.ico" />
     <title>Home - Company Name</title>
+    <!--#endregion Meta Tag-->
 
-    <!-- CSS -->
+    <!--#region CSS Import-->
+    <!--Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
+    <!--Font Awesome 6.2-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <!--Font Awesome 4.7-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <!--Font OpenSans-->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
     </style>
+    <!--Simple Notify Toast-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css"
     />
+    <!-- Slick Slider -->
     <link
       rel="stylesheet"
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <!-- AOS JS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <!-- CUSTOM JS -->
     <link rel="stylesheet" href="css/custom.css" />
-    <!-- CSS -->
+    <!--#endregion CSS Import-->
   </head>
   <body>
-    <div id="wrapwrap" class="d-flex flex-column">
+    <section id="main-content" class="d-flex flex-column">
       <header id="top">
         <div
           class="container-fluid bg-white header2nd_portal_desktop"
@@ -55,56 +71,75 @@
                   ><img
                     src="icon/companyLogo.png"
                     class="img img-fluid"
-                    alt="Portal HMK"
+                    alt="Pactumax Company Logo"
                     loading="lazy"
                 /></span>
               </a>
             </div>
             <div
-              class="col-12 col-lg-8 p-0 d-flex justify-content-between hmk_second_header_submenu overflow-auto"
+              class="col-12 col-lg-8 px-5 d-flex justify-content-between hmk_second_header_submenu"
             >
+              <ul></ul>
               <li class="nav-item">
-                <a role="menuitem" href="/en/" class="nav-link active">
+                <a role="menuitem" href="index.html" class="nav-link active">
                   <span>HOME</span>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a role="menuitem" href="/en/introduce" class="nav-link">
+                <a role="menuitem" href="about.html" class="nav-link">
                   <span>ABOUT</span>
                 </a>
               </li>
 
-              <li class="nav-item">
-                <a role="menuitem" href="/en/portal/category" class="nav-link">
-                  <span>PRODUCTS AND SERVICES</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a role="menuitem" href="/en/video" class="nav-link">
-                  <span>VIDEO</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
+              <li class="nav-item dropdown">
                 <a
                   role="menuitem"
-                  href="http://webshop.hamakyu.com/"
+                  href="#"
                   class="nav-link"
+                  data-bs-toggle="dropdown"
                 >
-                  <span>WEBSHOP</span>
+                  <span>PRODUCTS AND SERVICES</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item has-children" href="#">Engineering Plastic</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item has-children href="#"
+                      >Electronic Assembly Tool</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item has-children" href="#">Machine Component</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Product Catalogs</a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Another submenu 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another submenu 2</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another submenu 3</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another submenu 4</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a role="menuitem" href="/en/map/website" class="nav-link">
+                  <span>POSTS AND EVENTS</span>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a role="menuitem" href="/en/my/contact" class="nav-link">
                   <span>CONTACT</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a role="menuitem" href="/en/map/website" class="nav-link">
-                  <span>SITEMAP</span>
                 </a>
               </li>
             </div>
@@ -143,11 +178,10 @@
                 ><img
                   src="image/mini_logo.png"
                   class="img img-fluid mobile-brand-logo"
-                  alt="Portal HMK"
+                  alt="Pactumax Mini Logo"
                   loading="lazy"
               /></span>
             </a>
-
             <div class="ml-auto">
               <button
                 type="button"
@@ -168,13 +202,17 @@
               <ul id="top_menu" class="nav navbar-nav o_menu_loading">
                 <div class="d-grid hmk_second_header_submenu">
                   <li class="nav-item">
-                    <a role="menuitem" href="/en/" class="nav-link active">
+                    <a
+                      role="menuitem"
+                      href="index.html"
+                      class="nav-link active"
+                    >
                       <span>HOME</span>
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a role="menuitem" href="/en/introduce" class="nav-link">
+                    <a role="menuitem" href="about.html" class="nav-link">
                       <span>ABOUT</span>
                     </a>
                   </li>
@@ -188,38 +226,14 @@
                       <span>PRODUCTS AND SERVICES</span>
                     </a>
                   </li>
-
                   <li class="nav-item">
-                    <a role="menuitem" href="/en/blog" class="nav-link">
-                      <span>VIDEOS</span>
+                    <a role="menuitem" href="/en/map/website" class="nav-link">
+                      <span>POSTS AND EVENTS</span>
                     </a>
                   </li>
-
-                  <li class="nav-item">
-                    <a role="menuitem" href="/en/video" class="nav-link">
-                      <span>VIDEO</span>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a
-                      role="menuitem"
-                      href="http://webshop.hamakyu.com/"
-                      class="nav-link"
-                    >
-                      <span>WEBSHOP</span>
-                    </a>
-                  </li>
-
                   <li class="nav-item">
                     <a role="menuitem" href="/en/my/contact" class="nav-link">
                       <span>CONTACT</span>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a role="menuitem" href="/en/map/website" class="nav-link">
-                      <span>SITEMAP</span>
                     </a>
                   </li>
                 </div>
@@ -232,18 +246,26 @@
         <!-- Main Slider -->
         <div class="main-slider full-slider">
           <div class="slider__item">
-            <img class="slider__image" src="image/plastic-slider.jpg" alt="" />
+            <img
+              class="slider__image"
+              src="image/plastic-slider.jpg"
+              alt="Main Slider"
+            />
           </div>
           <div class="slider__item">
-            <img class="slider__image" src="image/banner hmk.jpg" alt="" />
+            <img
+              class="slider__image"
+              src="image/banner hmk.jpg"
+              alt="Main Slider"
+            />
           </div>
-          <div class="slider__item">
+          <!-- <div class="slider__item">
             <img
               class="slider__image"
               src="image/electric-tools-slider.jpg"
               alt=""
             />
-          </div>
+          </div> -->
           <div class="slider__item">
             <img
               class="slider__image"
@@ -255,7 +277,7 @@
             <img
               class="slider__image"
               src="image/plates-banner_slider-landscape_l.jpg"
-              alt=""
+              alt="Main Slider"
             />
           </div>
         </div>
@@ -329,7 +351,10 @@
           <div class="product-categories d-flex justify-content-center">
             <div class="product-categories-card">
               <div class="product-image col">
-                <img src="image/product-type-tools.jpg" alt="" />
+                <img
+                  src="image/product-type-tools.jpg"
+                  alt="product-catagories"
+                />
               </div>
               <div class="product-info col">
                 <h3 class="product-type">Electronic Assembly Tools</h3>
@@ -342,7 +367,10 @@
             </div>
             <div class="product-categories-card">
               <div class="product-image col">
-                <img src="image/product-type-component-machine.jpg" alt="" />
+                <img
+                  src="image/product-type-component-machine.jpg"
+                  alt="product-catagories"
+                />
               </div>
               <div class="product-info col">
                 <h3 class="product-type">Machine Components</h3>
@@ -356,7 +384,10 @@
             </div>
             <div class="product-categories-card">
               <div class="product-image col">
-                <img src="image/product-type-plastic.jpg" alt="" />
+                <img
+                  src="image/product-type-plastic.jpg"
+                  alt="product-catagories"
+                />
               </div>
               <div class="product-info col">
                 <h3 class="product-type">Engineering Plastics</h3>
@@ -371,7 +402,10 @@
             </div>
             <div class="product-categories-card">
               <div class="product-image col">
-                <img src="image/product-type-tools.jpg" alt="" />
+                <img
+                  src="image/product-type-tools.jpg"
+                  alt="product-catagories"
+                />
               </div>
               <div class="product-info col">
                 <h3 class="product-type">Electronic Assembly Tools</h3>
@@ -384,7 +418,10 @@
             </div>
             <div class="product-categories-card">
               <div class="product-image col">
-                <img src="image/product-type-component-machine.jpg" alt="" />
+                <img
+                  src="image/product-type-component-machine.jpg"
+                  alt="product-catagories"
+                />
               </div>
               <div class="product-info col">
                 <h3 class="product-type">Machine Components</h3>
@@ -398,7 +435,10 @@
             </div>
             <div class="product-categories-card">
               <div class="product-image col">
-                <img src="image/product-type-plastic.jpg" alt="" />
+                <img
+                  src="image/product-type-plastic.jpg"
+                  alt="product-catagories"
+                />
               </div>
               <div class="product-info col">
                 <h3 class="product-type">Engineering Plastics</h3>
@@ -432,7 +472,7 @@
                   <div class="product-image">
                     <img
                       src="https://pactumax.com/wp-content/uploads/2021/07/MCL0002.jpg"
-                      alt=""
+                      alt="Product Image Alt"
                     />
                   </div>
                   <div class="product-info text-center">
@@ -447,13 +487,13 @@
                 <div class="single-product">
                   <div class="product-image">
                     <img
-                      src="https://pactumax.com/wp-content/uploads/2021/07/MCL0002.jpg"
-                      alt=""
+                      src="https://pactumax.com/wp-content/uploads/2021/10/MRE0009_R1.jpg"
+                      alt="Product Image Alt"
                     />
                   </div>
                   <div class="product-info text-center">
-                    <h5 class="product-name">Ball Lock Pins (T Handle)</h5>
-                    <p class="product-price">$18.80 – $50.90</p>
+                    <h5 class="product-name">Drill Press Vises</h5>
+                    <p class="product-price">$252.80 – $662.90</p>
                   </div>
                 </div>
               </div>
@@ -463,13 +503,13 @@
                 <div class="single-product">
                   <div class="product-image">
                     <img
-                      src="https://pactumax.com/wp-content/uploads/2021/07/MCL0002.jpg"
-                      alt=""
+                      src="https://pactumax.com/wp-content/uploads/2022/04/G10.jpg"
+                      alt="Product Image Alt"
                     />
                   </div>
                   <div class="product-info text-center">
-                    <h5 class="product-name">Ball Lock Pins (T Handle)</h5>
-                    <p class="product-price">$18.80 – $50.90</p>
+                    <h5 class="product-name">G-10 / FR-4</h5>
+                    <p class="product-price">$8.90 – $454.00</p>
                   </div>
                 </div>
               </div>
@@ -479,13 +519,15 @@
                 <div class="single-product">
                   <div class="product-image">
                     <img
-                      src="https://pactumax.com/wp-content/uploads/2021/07/MCL0002.jpg"
-                      alt=""
+                      src="https://pactumax.com/wp-content/uploads/2021/07/MCL0007.png"
+                      alt="Product Image Alt"
                     />
                   </div>
                   <div class="product-info text-center">
-                    <h5 class="product-name">Ball Lock Pins (T Handle)</h5>
-                    <p class="product-price">$18.80 – $50.90</p>
+                    <h5 class="product-name">
+                      Leveling Feet (Steel, Black Oxide Finish)
+                    </h5>
+                    <p class="product-price">$6.80 – $24.10</p>
                   </div>
                 </div>
               </div>
@@ -495,13 +537,15 @@
                 <div class="single-product">
                   <div class="product-image">
                     <img
-                      src="https://pactumax.com/wp-content/uploads/2021/07/MCL0002.jpg"
-                      alt=""
+                      src="https://pactumax.com/wp-content/uploads/2021/07/MCL0006.png"
+                      alt="Product Image Alt"
                     />
                   </div>
                   <div class="product-info text-center">
-                    <h5 class="product-name">Ball Lock Pins (T Handle)</h5>
-                    <p class="product-price">$18.80 – $50.90</p>
+                    <h5 class="product-name">
+                      Leveling Feet (Steel, Zinc Plated, With Delrin® Pad)
+                    </h5>
+                    <p class="product-price">$$8.60 – $28.80</p>
                   </div>
                 </div>
               </div>
@@ -511,13 +555,13 @@
                 <div class="single-product">
                   <div class="product-image">
                     <img
-                      src="https://pactumax.com/wp-content/uploads/2021/07/MCL0002.jpg"
-                      alt=""
+                      src="https://pactumax.com/wp-content/uploads/2021/07/MVL0001.jpg"
+                      alt="Product Image Alt"
                     />
                   </div>
                   <div class="product-info text-center">
-                    <h5 class="product-name">Ball Lock Pins (T Handle)</h5>
-                    <p class="product-price">$18.80 – $50.90</p>
+                    <h5 class="product-name">Long Travel Hex Nose Plungers</h5>
+                    <p class="product-price">$39.50 – $72.80</p>
                   </div>
                 </div>
               </div>
@@ -527,13 +571,13 @@
                 <div class="single-product">
                   <div class="product-image">
                     <img
-                      src="https://pactumax.com/wp-content/uploads/2021/07/MCL0002.jpg"
-                      alt=""
+                      src="https://pactumax.com/wp-content/uploads/2022/04/Macor.jpg"
+                      alt="Product Image Alt"
                     />
                   </div>
                   <div class="product-info text-center">
-                    <h5 class="product-name">Ball Lock Pins (T Handle)</h5>
-                    <p class="product-price">$18.80 – $50.90</p>
+                    <h5 class="product-name">Macor MGC</h5>
+                    <p class="product-price">$132.40 – $2,993.60</p>
                   </div>
                 </div>
               </div>
@@ -543,13 +587,13 @@
                 <div class="single-product">
                   <div class="product-image">
                     <img
-                      src="https://pactumax.com/wp-content/uploads/2021/07/MCL0002.jpg"
-                      alt=""
+                      src="https://pactumax.com/wp-content/uploads/2022/04/AS-Plate-PVC-ESep30.jpg"
+                      alt="Product Image Alt"
                     />
                   </div>
                   <div class="product-info text-center">
-                    <h5 class="product-name">Ball Lock Pins (T Handle)</h5>
-                    <p class="product-price">$18.80 – $50.90</p>
+                    <h5 class="product-name">Anti-Static Plate PVC ESEP30</h5>
+                    <p class="product-price">$16.30 – $40.30</p>
                   </div>
                 </div>
               </div>
@@ -566,9 +610,133 @@
           </div>
         </section>
         <!-- End Products -->
+        <!-- Blog Section -->
+        <section class="blog-section mt-5 mb-5">
+          <div class="container">
+            <div class="row justify-content-start pt-3 pb-3">
+              <div class="col-md-8 col-lg-6">
+                <a href="" class="link-secondary view-all-product"
+                  >From the Blog
+                  <i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="blog-slider">
+                  <div class="blog-card">
+                    <div class="blog-img">
+                      <img
+                        src="image/blog-01.png"
+                        class="img-fluid"
+                        alt="Blog Image"
+                      />
+                    </div>
+                    <div class="blog-info">
+                      <div class="blog-date">14 JAN, 2023</div>
+                      <h5 class="blog-title text-truncate">
+                        This is new Title of Blog
+                      </h5>
+                      <p class="blog-summary truncate-overflow">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. A mollitia odio nobis quaerat ad rerum illum
+                        repellendus dicta, voluptate voluptatibus, assumenda
+                        laborum aliquid cum! Recusandae molestiae enim expedita
+                        iusto soluta quam ea laboriosam est totam quasi omnis
+                        odit similique placeat nobis quae dolor minima, sequi
+                        accusantium. Voluptas maiores reiciendis at.
+                      </p>
+                      <p class="main-blue-color">
+                        By <strong>Admin</strong> - <strong>0</strong> Comments
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="blog-img">
+                      <img
+                        src="image/blog-01.png"
+                        class="img-fluid"
+                        alt="Blog Image"
+                      />
+                    </div>
+                    <div class="blog-info">
+                      <div class="blog-date">14 JAN, 2023</div>
+                      <h5 class="blog-title text-truncate">
+                        This is new Title of Blog
+                      </h5>
+                      <p class="blog-summary truncate-overflow">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ad repellendus labore harum consectetur minima
+                        neque, consequatur eaque eius error deleniti? Minus aut
+                        dolor ipsa ex totam corrupti! Eos, maiores temporibus
+                        dicta quae earum consequuntur explicabo reiciendis
+                        soluta consectetur similique a incidunt sapiente dolor
+                        nisi facilis accusantium eligendi animi. Sed, tempore!
+                      </p>
+                      <p class="main-blue-color">
+                        By <strong>Admin</strong> - <strong>0</strong> Comments
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="blog-img">
+                      <img
+                        src="image/blog-01.png"
+                        class="img-fluid"
+                        alt="Blog Image"
+                      />
+                    </div>
+                    <div class="blog-info">
+                      <div class="blog-date">14 JAN, 2023</div>
+                      <h5 class="blog-title text-truncate">
+                        This is new Title of Blog
+                      </h5>
+                      <p class="blog-summary truncate-overflow">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Expedita minus laborum iusto et deleniti adipisci
+                        doloremque quibusdam amet, hic perspiciatis?
+                      </p>
+                      <p class="main-blue-color">
+                        By <strong>Admin</strong> - <strong>0</strong> Comments
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="blog-img">
+                      <img
+                        src="image/blog-01.png"
+                        class="img-fluid"
+                        alt="Blog Image"
+                      />
+                    </div>
+                    <div class="blog-info">
+                      <div class="blog-date">14 JAN, 2023</div>
+                      <h5 class="blog-title text-truncate">
+                        This is new Title of Blog
+                      </h5>
+                      <p class="blog-summary truncate-overflow">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis est voluptate necessitatibus perspiciatis error
+                        quasi eaque rerum laudantium inventore aperiam odit
+                        vitae, quo delectus recusandae praesentium, similique
+                        maiores rem enim tenetur repellat fugit! Quidem mollitia
+                        laborum id ex tempora, iste unde, natus vero facere
+                        necessitatibus fugiat est nostrum sequi quia.
+                      </p>
+                      <p class="main-blue-color">
+                        By <strong>Admin</strong> - <strong>0</strong> Comments
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Blog Section -->
 
         <!-- Feature Brand -->
-        <section class="section-featured-brand fluid-container">
+        <section class="section-featured-brand">
           <div class="row justify-content-center text-center pt-5 pb-5">
             <div class="col-md-8 col-lg-6">
               <div class="header">
@@ -576,167 +744,430 @@
               </div>
             </div>
           </div>
-          <div class="featured-brand-slider">
-            <ul>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/GEHR_504x175_100.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/Saint_504x175_100.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/SW_504x175_100.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/Corning_377x166_100.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/Norplex_504x175_100.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/mcam-logo_Testing.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/mcam-logo_Testing.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/mcam-logo_Testing.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/mcam-logo_Testing.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <!-- Dup -->
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/GEHR_504x175_100.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/Saint_504x175_100.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/SW_504x175_100.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/Corning_377x166_100.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/Norplex_504x175_100.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/mcam-logo_Testing.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/mcam-logo_Testing.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/mcam-logo_Testing.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://pactumax.com/">
-                  <img
-                    src="https://pactumax.com/wp-content/uploads/2021/11/mcam-logo_Testing.jpg"
-                    alt=""
-                  />
-                </a>
-              </li>
-            </ul>
+          <div class="fluid-container" style="margin: 0 10%">
+            <div class="brand__list mt30">
+              <div class="single__pro element-item f-M">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a
+                        href="https://pactumax.com/product_brands/mitsubishi-chemical-advanced-materials/"
+                      >
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/MCAM_Brand-Page-Big-_100.jpg"
+                          alt="MCAM"
+                        />MCAM
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-C">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/carr-lane/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Carrlane_504x175_100.jpg"
+                          alt="CarrLane"
+                        />CarrLane
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-D">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/dupont/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Dupond_377x166_100.jpg"
+                          alt="DUPONT"
+                        />DUPONT
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-N">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/nac/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/NAC_Brand-Page-Big-_100.jpg"
+                          alt="NAC"
+                        />NAC
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-D">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/drake/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Drake_504x175_100.jpg"
+                          alt="DRAKE"
+                        />DRAKE
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-P">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a
+                        href="https://pactumax.com/product_brands/polymer-industries/"
+                      >
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/08/Polymer-Indus-Logo.jpg"
+                          alt="POLYMER INDS"
+                        />POLYMER INDS
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-R">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a
+                        href="https://pactumax.com/product_brands/reid-supply/"
+                      >
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Reid-Tools_377x166_100.jpg"
+                          alt="Reid SUPPLY"
+                        />Reid SUPPLY
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-S">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a
+                        href="https://pactumax.com/product_brands/sumitomobakelite/"
+                      >
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Sumitomo_Brand-Page-Big-_100.jpg"
+                          alt="SUMITOMO"
+                        />SUMITOMO
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-W">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/wps/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/West-Lake_Brand-Page-Big-_100.jpg"
+                          alt="Westlake"
+                        />Westlake
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-w">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/wiha/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Wiha_377x166_100.jpg"
+                          alt="wiha"
+                        />wiha
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-V">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/vlier/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/VlierTools_377x166_100.jpg"
+                          alt="VLIER"
+                        />VLIER
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-G">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/gehr/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/GEHR_504x175_100.jpg"
+                          alt="GEHR"
+                        />GEHR
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-S">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/sekisui/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Sckis_504x175_100.jpg"
+                          alt="SEKISUI"
+                        />SEKISUI
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-C">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/corning/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Corning_377x166_100.jpg"
+                          alt="CORNING"
+                        />CORNING
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-K">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/kureha/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Koreha_Brand-Page-Big-_100.jpg"
+                          alt="Kureha"
+                        />Kureha
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-S">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a
+                        href="https://pactumax.com/product_brands/saint-gobain/"
+                      >
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Saint-_Brand-Page-Big-_100.jpg"
+                          alt="SAINT -GOBAIN"
+                        />SAINT -GOBAIN
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-N">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a
+                        href="https://pactumax.com/product_brands/norplex-micarta/"
+                      >
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Norplex_504x175_100.jpg"
+                          alt="Norplex"
+                        />Norplex
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-S">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/s-w/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/SW_504x175_100.jpg"
+                          alt="S &amp; W"
+                        />S &amp; W
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-W">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/wds/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/WDS_504x175_100.jpg"
+                          alt="WDS"
+                        />WDS
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-P">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/plaskolite/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Plaskolite_504x175_100.jpg"
+                          alt="PLASKOLITE"
+                        />PLASKOLITE
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-V">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/vycom/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/VYycom_Brand-Page-Big-_100.jpg"
+                          alt="Vycom"
+                        />Vycom
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-Q">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/quicher/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Quicher_504x175_100_R1.jpg"
+                          alt="Quicher"
+                        />Quicher
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-N">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/nordex/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/Nordex_504x175_100.jpg"
+                          alt="Nordex"
+                        />Nordex
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-A">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a
+                        href="https://pactumax.com/product_brands/acu-tool-llc/"
+                      >
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/ACU_504x175_100.jpg"
+                          alt="Acu-TOOL"
+                        />Acu-TOOL
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-A">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a
+                        href="https://pactumax.com/product_brands/afton-plastic/"
+                      >
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/AFTON_504x175_100.jpg"
+                          alt="AFTON"
+                        />AFTON
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-D">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/dynex/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/DYNEX_504x175_100.jpg"
+                          alt="DYNEX"
+                        />DYNEX
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-S">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/simona">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2022/05/Simona-Company-Logo.jpg"
+                          alt="SIMONA"
+                        />SIMONA
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="single__pro element-item f-W">
+                <div class="brand">
+                  <div class="brand__details">
+                    <h2>
+                      <a href="https://pactumax.com/product_brands/warren-psi/">
+                        <img
+                          src="https://pactumax.com/wp-content/uploads/2021/11/WPI_504x175_100.jpg"
+                          alt="WARREN PSI"
+                        />WARREN PSI
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <!-- End Feature Brand -->
 
         <!-- Contact Us -->
-        <section class="section-contact">
+        <section class="section-contact mt-5 mb-5">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
                 <img
                   style="width: 100%"
                   src="https://pactumax.com/wp-content/uploads/2021/09/map_home.jpeg"
-                  alt=""
+                  alt="Pactumax Map"
                 />
               </div>
 
@@ -749,6 +1180,7 @@
                   </h3>
                   <div class="form-group mb-4">
                     <input
+                      required
                       type="text"
                       class="form-control"
                       placeholder="FullName"
@@ -756,6 +1188,7 @@
                   </div>
                   <div class="form-group mb-4">
                     <input
+                      required
                       type="email"
                       class="form-control"
                       placeholder="Email Address"
@@ -763,6 +1196,7 @@
                   </div>
                   <div class="form-group mb-4">
                     <input
+                      required
                       type="text"
                       class="form-control"
                       placeholder="Contact Number"
@@ -770,6 +1204,7 @@
                   </div>
                   <div class="form-group mb-4">
                     <input
+                      required
                       type="text"
                       class="form-control"
                       placeholder="Company Name"
@@ -792,7 +1227,6 @@
             </div>
           </div>
         </section>
-
         <!-- End Contact Us -->
       </main>
       <footer
@@ -816,6 +1250,7 @@
                     src="icon/logo-white.png"
                     style="height: 50px"
                     loading="lazy"
+                    alt="Footer Logo"
                   />
                 </div>
                 <div class="d-grid mt-4">
@@ -876,7 +1311,6 @@
                         class="text-white"
                         data-original-title=""
                         title=""
-                        aria-describedby="tooltip111355"
                         >About us</a
                       >
                     </span>
@@ -1005,45 +1439,59 @@
           >
             <div>@2023. All right reserved</div>
             <div>
-              <img src="icon/ThongBaoBCT.png" loading="lazy" />
+              <img src="icon/ThongBaoBCT.png" loading="lazy" alt="" />
             </div>
           </div>
         </div>
       </footer>
-      <div
-        role="dialog"
-        id="product_configure_model_main"
-        class="o_not_editable"
-        contenteditable="false"
-      ></div>
+    </section>
+    <button
+      type="button"
+      class="btn btn-primary btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-      <div
-        role="dialog"
-        id="hotspot_configure_model_main"
-        class="o_not_editable"
-        contenteditable="false"
-      ></div>
-    </div>
-    <!-- Script -->
+    <!--#region Script Section -->
+    <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Slick Slider JS -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-
+    <!-- ISOTOPE JS -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Simple Notify JS -->
     <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
+    <!-- Custom JS -->
     <script>
       // Sticky Header
       var topHeader = document.getElementById("top");
+      //Get the button
+      var myButton = document.getElementById("btn-back-to-top");
       window.addEventListener("scroll", () => {
+        // scroll down and add fixed top
         if (window.pageYOffset >= 500 + topHeader.offsetTop) {
           $("main").css("margin-top", `${topHeader.offsetTop}px`);
           topHeader.classList.add("fixed_top");
         } else {
           $("main").css("margin-top", `0px`);
           topHeader.classList.remove("fixed_top");
+        }
+        // scroll Down and Show Button
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          myButton.style.display = "block";
+        } else {
+          myButton.style.display = "none";
         }
       });
       // Sticky Header
@@ -1055,6 +1503,23 @@
           autoplay: true,
           autoplaySpeed: 4000,
         });
+        $(".blog-slider").slick({
+          slidesToShow: 4,
+          prevArrow: false,
+          nextArrow: false,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          infinite: false,
+          arrows: true,
+          dots: false,
+          responsive: [
+            { breakpoint: 1367, settings: { slidesToShow: 3 } },
+            { breakpoint: 1024, settings: { slidesToShow: 2 } },
+            { breakpoint: 767, settings: { slidesToShow: 2 } },
+            { breakpoint: 480, settings: { slidesToShow: 1 } },
+          ],
+        });
         $(".product-categories").slick({
           slidesToScroll: 1,
           centerPadding: "0px",
@@ -1062,41 +1527,54 @@
           slidesToShow: 3,
           focusOnSelect: true,
           autoplay: true,
-          autoplaySpeed: 4000,
+          autoplaySpeed: 3000,
           prevArrow:
             "<button type='button' class='slick-prev slick-arrow main-blue-color'><i class='fa fa-arrow-circle-o-left'></i></button>",
           nextArrow:
             "<button type='button' class='slick-next slick-arrow main-blue-color'><i class='fa fa-arrow-circle-o-right'></i></button>",
           responsive: [
             {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-              },
+              prevArrow: false,
+              nextArrow: false,
+              breakpoint: 1367,
+              settings: { slidesToShow: 3 },
             },
             {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
+              prevArrow: false,
+              nextArrow: false,
+              breakpoint: 767,
+              settings: { slidesToShow: 1 },
             },
             {
+              prevArrow: false,
+              nextArrow: false,
               breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
+              settings: { slidesToShow: 1 },
             },
           ],
         });
 
+        // Init AOS
         AOS.init();
+
+        // When the user clicks on the button, scroll to the top of the document
+        myButton.addEventListener("click", () => {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        });
+
+        $(".brand__list").isotope({
+          itemSelector: ".single__pro",
+          percentPosition: true,
+          transitionDuration: "0.7s",
+          layoutMode: "fitRows",
+          masonry: {
+            // use outer width of grid-sizer for columnWidth
+            columnWidth: 1,
+          },
+        });
       });
     </script>
-
-    <!-- Script -->
+    <!--#endregion Script Section -->
   </body>
 </html>
